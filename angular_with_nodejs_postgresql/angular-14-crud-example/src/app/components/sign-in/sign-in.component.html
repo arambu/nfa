@@ -1,0 +1,51 @@
+<div style="height:100%;">
+  <div class="row" style="height:100%;">
+    <div class="col-6 left-div">
+      <div class="left-block submit-form" style="margin-top: 30%">
+        <img src="/assets/logo/wedoor.png" alt="logo_wedoor">
+        <div>
+          <span>Saisie de commande</span>
+          <span>Porte de garage basculante</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 submit-form" style="background: white">
+      <div *ngIf="!submitted" class="title">
+        <h3>Bienvenue</h3>
+        <h5>Connexion</h5>
+        <!-- EMAIL -->
+        <div class="form-group sign-in-email">
+          <label for="email">Utilisateur</label>
+          <input
+            class="form-control"
+            id="email"
+            type="text"
+            required
+            [(ngModel)]="auth.email"
+            name="description"
+            placeholder="Votre adresse Email"
+          />
+        </div>
+        <!-- PASSWORD -->
+        <div class="form-group sign-in-password">
+          <label for="password">Mot de passe</label>
+          <input
+            class="form-control"
+            id="password"
+            type="password"
+            required
+            [(ngModel)]="auth.password"
+            name="description"
+            placeholder="Votre mot de passe"
+          />
+        </div>
+        <button (click)="authUser()" class="sign-in-button">Se connecter</button>
+        <br>
+        <button class="sign-in-button-">Demander mes accès</button>
+        <div>
+          <a class="sign-in-forget-pwd" href="http://localhost:8081/forgot-password">Mot de passe oublié ?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

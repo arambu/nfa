@@ -1,0 +1,99 @@
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.app-sign-in {
+	height: 100%;
+}
+
+.left-div {
+	height: 100%; 
+	width: 100%; 
+	background-image: url('/assets/img/arriere_plan.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.left-block > img {
+	height: 80px; 
+  	display: block;
+  	margin-bottom: 100px;
+}
+
+.left-block > div {
+  	display: block;
+  	text-align: start;
+  	font-size: 25px;
+  	color: #003f6a;
+  	font-weight: bold;
+  	width: 500px;
+}
+
+.left-block > div > span {
+  	display: block;
+  	text-align: start;
+}
+
+.submit-form {
+    max-width: 400px;
+   	margin: auto;
+   	padding: 50px;
+}
+
+.title > h3 {
+	margin-bottom: 20px;
+	color: #003f6a;
+	font-weight: bold;
+}
+
+.title > h5 {
+	margin-bottom: 20px;
+	color: #003f6a;
+}
+ 
+.form-group > label {
+	color: #6c757d
+}
+
+.form-group > input::placeholder {
+	color: black;
+}
+
+.sign-in-email > input {
+	height: 45px;
+	background: url('/assets/icone/user.png') no-repeat 95%;
+	background-size: 6%;
+}
+
+.sign-in-password > input {
+	height: 45px;
+	background: url('/assets/icone/password.png') no-repeat 95%;
+	background-size: 6%;
+}
+
+.sign-in-button {
+	width: 100%;
+	height: 45px;
+	background-color: #003f6a;
+	color: white;
+	margin-bottom: 20px;
+	border-color: #003f6a;
+	border-width: 1px;
+}
+
+.sign-in-button- {
+	width: 100%;
+	height: 45px;
+	background-color: white;
+	color: #003f6a;
+	margin-bottom: 20px;
+	border-color: #003f6a;
+	border-width: 1px;
+}
+
+.sign-in-forget-pwd {
+	text-decoration: underline;
+	float: right;
+	color: #003f6a;
+}

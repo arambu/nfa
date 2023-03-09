@@ -1,0 +1,113 @@
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <!-- PASSWORD -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          class="form-control"
+          id="password"
+          required
+          [(ngModel)]="user.password"
+          name="description"
+        />
+      </div>
+      <!-- PASSWORD VERIFICATION -->
+      <div class="form-group">
+        <label for="password-verification">Password Verification</label>
+        <input
+          class="form-control"
+          id="password-verification"
+          required
+          [(ngModel)]="user.password_verification"
+          name="description"
+        />
+      </div>
+      <!-- BUTTON SUBMIT -->
+      <button (click)="updateUser()" class="btn btn-success">Update</button>
+    </div>
+    <br>
+    <div>
+        <button (click)="deleteUser()" class="btn btn-success">Delete user</button>
+    </div>
+  </div>
+</div>
+  
+
+        <!-- NAME -->
+          <!-- 
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="user.name"
+            name="title"
+          />
+        </div>
+-->
+
+        <!-- LAST NAME -->
+          <!-- 
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input
+            class="form-control"
+            id="last_name"
+            required
+            [(ngModel)]="user.last_name"
+            name="description"
+          />
+        </div>
+-->
+
+        <!-- EMAIL -->
+          <!-- 
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            required
+            [(ngModel)]="user.email"
+            name="description"
+          />
+        </div>
+ -->
+
+        <!-- ROLE -->
+          <!-- 
+            <div class="form-group">
+          <label for="role">Role</label>
+          <input
+            class="form-control"
+            id="role"
+            required
+            [(ngModel)]="user.role"
+            name="description"
+          />
+        </div>
+ -->
+
+       <!-- PERMISSION -->
+        <!-- 
+       <div class="form-group">
+        <label for="permission">Permission</label>
+        <input
+          class="form-control"
+          id="permission"
+          required
+          [(ngModel)]="user.permission"
+          name="description"
+        />
+        </div>
+ -->
+
+       <!--
+      <div *ngIf="submitted">
+        <h4>Tutorial was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newUser()">Add</button>
+      </div>
+      -->

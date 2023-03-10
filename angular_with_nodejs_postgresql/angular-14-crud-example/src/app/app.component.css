@@ -18,17 +18,37 @@
 	height: 50px;
 	width: 50px;
 	padding-top: 25%;
-	padding-left: 45px;
+	padding-left: 43px;
+	background: #e7ecf4;
 }
 
 .question-title:before {
     content: '';
-    background:url(/assets/icone/contact.png);
-    background-size: 20px 20px;
+    /*background:url(/assets/icone/nav_bar/contact.png);*/
     position:absolute;
     width:20px;
     height:20px;
     margin-left:-30px;
+}
+
+.account:before {
+    background:url(/assets/icone/nav_bar/account.png);
+    background-size: 20px 20px;
+}
+
+.commande:before {
+    background:url(/assets/icone/nav_bar/commande.png);
+    background-size: 20px 20px;
+}
+
+.ajouter:before {
+    background:url(/assets/icone/nav_bar/ajouter.png);
+    background-size: 20px 20px;
+}
+
+.contact:before {
+    background:url(/assets/icone/nav_bar/contact.png);
+    background-size: 20px 20px;
 }
 
 .question-title > a {

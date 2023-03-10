@@ -1,0 +1,42 @@
+.btn span.icon {
+    background: url(/assets/icone/contact.png) no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+}
+
+.questions-list {        
+	margin-left: 10px;
+	background: white;
+}
+
+.question-title {        
+    display:block;
+    padding-left:30px;
+    cursor: pointer;
+    border: 2px solid #003f6a;
+	height: 50px;
+	width: 50px;
+	padding-top: 25%;
+	padding-left: 45px;
+}
+
+.question-title:before {
+    content: '';
+    background:url(/assets/icone/contact.png);
+    background-size: 20px 20px;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-30px;
+}
+
+.question-title > a {
+	content: '';
+    background:url(/assets/icone/contact.png);
+    background-size: 20px 20px;
+    position:absolute;
+    width:20px;
+    height:20px;
+    margin-left:-30px;
+}

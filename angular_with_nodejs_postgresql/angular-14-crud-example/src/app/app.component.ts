@@ -12,12 +12,10 @@ interface Token {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @Input() navbar = true;
+  @Input() navbar = false;
 
-  constructor(private router: Router,
-    private http: HttpClient) { 
-      this.router.navigate(['/sign-in']);
-    }
+  constructor(private router: Router, private http: HttpClient) { 
+  }
 
   ngOnInit(): void {
     var token = localStorage.getItem('tokenUserSession')
@@ -27,12 +25,10 @@ export class AppComponent {
         this.http.post<Token>('http://localhost:8080/api/auth/verification', { token: token }).subscribe({
           next: (res) => { 
             if (res.message === "Token verify") {
-                this.navbar = false;
+                this.navbar = true;
                 resolve(true);
             } else {
-                this.navbar = true;
                 localStorage.removeItem("tokenUserSession");
-                this.router.navigate(['/sign-in']);
                 reject(false);
             }
           },
@@ -47,10 +43,10 @@ export class AppComponent {
   public clearAuthData() {
     localStorage.removeItem("tokenUserSession"); 
     this.router.navigate(['/sign-in']); 
-    this.navbar = true;
+    this.navbar = false;
   }
 
   public changeNavbar() {
-    this.navbar = false;
+    this.navbar = true;
   }
 }

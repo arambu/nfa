@@ -32,22 +32,22 @@
 }
 
 .account:before {
-    background:url(/assets/icone/nav_bar/account.png);
+    background:url(/assets/icone/nav_bar/bleu/compte.png);
     background-size: 20px 20px;
 }
 
 .commande:before {
-    background:url(/assets/icone/nav_bar/commande.png);
+    background:url(/assets/icone/nav_bar/bleu/commande.png);
     background-size: 20px 20px;
 }
 
 .ajouter:before {
-    background:url(/assets/icone/nav_bar/ajouter.png);
+    background:url(/assets/icone/nav_bar/bleu/ajouter.png);
     background-size: 20px 20px;
 }
 
 .contact:before {
-    background:url(/assets/icone/nav_bar/contact.png);
+    background:url(/assets/icone/nav_bar/bleu/contact.png);
     background-size: 20px 20px;
 }
 
@@ -59,4 +59,8 @@
     width:20px;
     height:20px;
     margin-left:-30px;
+}
+
+.align-icon-right {
+  margin: auto 0 auto auto;
 }

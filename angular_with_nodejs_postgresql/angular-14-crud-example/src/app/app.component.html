@@ -7,34 +7,42 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<div>
+
   <div *ngIf="navbar;">
+    <!-- 
     <nav class="navbar navbar-expand navbar-dark bg-dark">
+      -->
+    <nav class="navbar navbar-expand">
       <!-- <a href="#" class="navbar-brand">Home</a> -->
-      <div class="navbar-nav mr-auto">
+      <div class="navbar-nav align-icon-right ">
+        <!--
         <li class="nav-item">
           <a routerLink="admin" class="nav-link">Admin</a>
         </li>
-        <button (click)="clearAuthData()" class="btn btn-success">Sign out</button>
-        <div (click)="clearAuthData()" class="questions-list">
-          <a class="question-title account"></a> 
+        -->
+        <div class="questions-list">
+          <a routerLink="my-account" class="question-title account"></a> 
         </div>
-        <div (click)="clearAuthData()" class="questions-list">
-          <a class="question-title commande"></a> 
+        <div class="questions-list">
+          <a routerLink="my-orders" class="question-title commande"></a> 
         </div>
         <div (click)="clearAuthData()" class="questions-list">
           <a class="question-title ajouter"></a> 
         </div>
         <div (click)="clearAuthData()" class="questions-list">
-          <a class="question-title contact"></a> 
+          <a class="question-title contact"></a>        
         </div>
+          <!--
+          <button (click)="clearAuthData()" class="btn btn-success">Sign out</button>
+          -->
       </div>
+
     </nav>
   </div>
   <div class="container">
     <router-outlet></router-outlet>
   </div>
-</div>
+
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

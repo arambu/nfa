@@ -10,6 +10,9 @@ import { AuthGuard } from './auth/auth.guard';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { ForgotPasswordSendEmailComponent } from './components/forgot-password-send-email/forgot-password-send-email.component';
 import { VerificationUserComponent } from './components/verification-user/verification-user.component';
+import { MyOrdersComponent } from './components/my-orders/my-orders.component';
+import { MyAccountComponent } from './components/my-account/my-account.component';
+
 //import { Role } from './models/role';
 
 const routes: Routes = [
@@ -25,6 +28,8 @@ const routes: Routes = [
   { path: 'verification-user/', component: VerificationUserComponent },
   { path: 'verification-user/:token', component: VerificationUserComponent },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
+  { path: 'my-orders', component: MyOrdersComponent, canActivate: [AuthGuard] },
+  { path: 'my-account', component: MyAccountComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '' }
 ];
 

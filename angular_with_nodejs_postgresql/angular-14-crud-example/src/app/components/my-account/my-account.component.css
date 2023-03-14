@@ -1,0 +1,59 @@
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.left-div {
+	height: 100%; 
+	width: 100%; 
+	background-image: url('/assets/img/arriere_plan.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.left-block > img {
+	height: 80px; 
+  	display: block;
+  	margin-bottom: 50px;
+}
+
+.left-block > div {
+  	display: block;
+  	text-align: start;
+  	font-size: 25px;
+  	color: #003f6a;
+  	font-weight: bold;
+  	width: 500px;
+}
+
+.left-block > div > span {
+  	display: block;
+  	text-align: start;
+}
+
+.left-block-logo {
+    max-width: 400px;
+   	margin: auto;
+   	padding: 50px;
+}
+
+.form-group > label {
+	color: #6c757d
+}
+
+.form-group > input::placeholder {
+	color: black;
+}
+
+.right-block {
+	padding: 45px;
+}
+
+.right-block > h1 {
+	color: #003f6a;
+	margin-bottom: 50px;
+}
+
+.right-block > h3 {
+	color: #003f6a;
+}

@@ -15,6 +15,8 @@ import { AdminComponent } from './components/admin/admin.component';
 import { VerificationUserComponent } from './components/verification-user/verification-user.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { ForgotPasswordSendEmailComponent } from './components/forgot-password-send-email/forgot-password-send-email.component';
+import { MyOrdersComponent } from './components/my-orders/my-orders.component';
+import { MyAccountComponent } from './components/my-account/my-account.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ForgotPasswordSendEmailComponent } from './components/forgot-password-s
     AdminComponent,
     VerificationUserComponent,
     ForgotPasswordComponent,
-    ForgotPasswordSendEmailComponent
+    ForgotPasswordSendEmailComponent,
+    MyOrdersComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,
